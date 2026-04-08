@@ -1,3 +1,7 @@
 # rodo-daw-2026
 
-Readme para la entrega de la actividad inicial
+- Materia: Desarrollo y Arquitecturas Web
+- Alumno: Rodolfo Meroi
+- Comisión: 4-A
+
+Repositorio creado para la entrega de la actividad inicial
