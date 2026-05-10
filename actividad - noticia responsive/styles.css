@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #1f1f1f;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d5d5d5;
+    height: 48px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    gap: 8px;
+}
+
+.nav-links {
+    display: none;
+    flex: 1;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1f1f1f;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.btn-register,
+.btn-login {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+}
+
+.btn-register {
+    background-color: #fde8cc;
+    color: #3b3b3b;
+    border: 1px solid #fde8cc;
+}
+
+.btn-login {
+    background-color: #ffffff;
+    color: #3b3b3b;
+    border: 1px solid #c2c2c2;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.logo-section img {
+    width: 160px;
+    height: auto;
+}
+
+.article-header {
+    padding: 14px 16px 0;
+}
+
+.categoria {
+    font-size: 13px;
+    font-weight: 500;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.categoria a {
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+.categoria-arrow {
+    color: #9b9b9b;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f1f1f;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.bajada {
+    font-size: 21px;
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.meta {
+    padding: 8px 16px 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.meta time {
+    font-size: 14px;
+    color: #3b3b3b;
+}
+
+.figura-principal {
+    margin: 0;
+}
+
+.figura-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.figura-principal figcaption {
+    font-size: 16px;
+    color: #555555;
+    padding: 8px 16px;
+}
+
+.cuerpo {
+    padding: 16px 16px 24px;
+}
+
+.cuerpo p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #1f1f1f;
+    margin-bottom: 16px;
+}
+
+.cuerpo a {
+    color: #0b57d0;
+    text-decoration: none;
+}
+
+.cuerpo figure {
+    margin: 16px -16px;
+}
+
+.cuerpo figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cuerpo figcaption {
+    font-size: 16px;
+    color: #555555;
+    padding: 8px 16px;
+    margin: 12px 0 16px;
+}
+
+@media (min-width: 768px) {
+
+    .nav-bar {
+        padding: 0 20px;
+        gap: 12px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .btn-register,
+    .btn-login {
+        font-size: 13px;
+        padding: 6px 14px;
+    }
+
+    .logo-section img {
+        width: 210px;
+    }
+
+    .article-header {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 22px 20px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .bajada {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .meta {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10px 20px 12px;
+    }
+
+    .figura-principal figcaption {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 8px 20px;
+    }
+
+    .cuerpo {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 22px 20px 32px;
+    }
+
+    .cuerpo p {
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+
+    .cuerpo figure {
+        margin: 22px 0;
+    }
+
+    .cuerpo figcaption {
+        padding: 8px 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .nav-bar {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 24px;
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        display: block;
+    }
+
+    .btn-register,
+    .btn-login {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .logo-section {
+        padding: 16px;
+    }
+
+    .logo-section img {
+        width: 280px;
+    }
+
+    .article-header {
+        max-width: 764px;
+        padding: 28px 0 0;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .bajada {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 16px;
+    }
+
+    .meta {
+        max-width: 764px;
+        padding: 12px 0 14px;
+    }
+
+    .meta time {
+        font-size: 16px;
+    }
+
+    .figura-principal {
+        max-width: 764px;
+        margin: 0 auto;
+    }
+
+    .figura-principal figcaption {
+        max-width: 764px;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .cuerpo {
+        max-width: 764px;
+        padding: 28px 0 48px;
+    }
+
+    .cuerpo p {
+        font-size: 22px;
+        line-height: 1.75;
+        margin-bottom: 24px;
+    }
+
+    .cuerpo figure {
+        margin: 28px 0;
+    }
+
+    .cuerpo figcaption {
+        font-size: 16px;
+        padding: 10px 0;
+        margin-bottom: 24px;
+    }
+}
